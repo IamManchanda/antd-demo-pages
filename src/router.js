@@ -5,6 +5,7 @@ import Button from '@/views/pages/button.vue';
 import Icon from '@/views/pages/icon.vue';
 import Affix from '@/views/pages/affix.vue';
 import Breadcrumb from '@/views/pages/breadcrumb.vue';
+import Dropdown from '@/views/pages/dropdown.vue';
 
 Vue.use(Router);
 
@@ -36,6 +37,11 @@ export default new Router({
       path: '/breadcrumb',
       name: 'Breadcrumb',
       component: Breadcrumb,
+    },
+    {
+      path: '/dropdown',
+      name: 'Dropdown',
+      component: Dropdown,
     },
   ],
 });
