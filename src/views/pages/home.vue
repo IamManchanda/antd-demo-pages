@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <p>Look into <code>src/views/pages</code> folder and render that page... for example <code>button.vue</code> will render <code>/button</code> url</p>
+    <p>Click on the links within the left nav for viewing the demo components.</p>
   </div>
 </template>
 
