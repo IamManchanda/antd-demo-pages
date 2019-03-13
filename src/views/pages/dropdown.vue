@@ -21,6 +21,38 @@
             </a-menu>
           </a-dropdown>
         </div>
+        <div class="dropdown-demos-container">
+          <a-dropdown-button @click="handleMenuClick">
+            Dropdown
+            <a-menu slot="overlay" @click="handleMenuClick">
+              <a-menu-item key="1"><a-icon type="user" />1st menu item</a-menu-item>
+              <a-menu-item key="2"><a-icon type="user" />2nd menu item</a-menu-item>
+              <a-menu-item key="3"><a-icon type="user" />3rd item</a-menu-item>
+            </a-menu>
+          </a-dropdown-button>
+        </div>
+        <div class="dropdown-demos-container">
+          <a-dropdown-button @click="handleButtonClick">
+            Dropdown
+            <a-menu slot="overlay" @click="handleMenuClick">
+              <a-menu-item key="1"><a-icon type="user" />1st menu item</a-menu-item>
+              <a-menu-item key="2"><a-icon type="user" />2nd menu item</a-menu-item>
+              <a-menu-item key="3"><a-icon type="user" />3rd item</a-menu-item>
+            </a-menu>
+          </a-dropdown-button>
+        </div>
+        <div class="dropdown-demos-container">
+          <a-dropdown>
+            <a-menu slot="overlay" @click="handleMenuClick">
+              <a-menu-item key="1"><a-icon type="user" />1st menu item</a-menu-item>
+              <a-menu-item key="2"><a-icon type="user" />2nd menu item</a-menu-item>
+              <a-menu-item key="3"><a-icon type="user" />3rd item</a-menu-item>
+            </a-menu>
+            <a-button>
+              Button <a-icon type="down" />
+            </a-button>
+          </a-dropdown>
+        </div>
       </a-col>
     </a-row>
   </div>
@@ -34,6 +66,12 @@ export default {
     };
   },
   methods: {
+    handleMenuClick(event) {
+      console.log({ event });
+    },
+    handleButtonClick(event) {
+      console.log({ event });
+    },
   },
 };
 </script>
@@ -46,10 +84,6 @@ export default {
 
     &:first-of-type {
       padding-top: 0.5rem;
-    }
-
-    .breadcrumb-red-separator {
-      color: #ff0000;
     }
   }
 </style>
