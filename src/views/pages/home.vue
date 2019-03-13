@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="@/assets/logo.png" />
+    <p>Look into <code>src/views/pages</code> folder and render that page... for example <code>button.vue</code> will render <code>/button</code> url</p>
   </div>
 </template>
 

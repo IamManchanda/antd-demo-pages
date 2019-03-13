@@ -38,7 +38,7 @@ export default {
     padding-bottom: 2rem;
 
     &:first-of-type {
-      padding-top: 0;
+      padding-top: 0.5rem;
     }
 
     .affix-demo-content {

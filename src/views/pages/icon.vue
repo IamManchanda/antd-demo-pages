@@ -39,7 +39,7 @@ export default {
     border-bottom: 1px dashed #0a0a0a;
 
     &:first-of-type {
-      padding-top: 0;
+      padding-top: 0.5rem;
     }
 
     .anticon {
